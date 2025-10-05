@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?q=80&w=1887&auto=format&fit=crop'); /* Imagem de fundo inspiradora */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Cor de fundo de fallback */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#verse-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verse-text {
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.verse-reference {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.lesson-container {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.lesson-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+#lesson-text {
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: justify;
+    color: #444;
+}
+
+#new-verse-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+}
+
+#new-verse-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
